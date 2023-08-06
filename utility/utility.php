@@ -140,7 +140,7 @@
             $mail->SMTPDebug = 0;
             $mail->SMTPAuth   = true;                                  
             $mail->SMTPSecure = "ssl";          
-            $mail->Host       = 'http://h2tcomputer.com/';                     
+            $mail->Host       = 'http://H2Tcomputer.com/';                     
             $mail->Port       = 465;                                    
             $mail->Username   = 'H2Tcomputer@gmail.com';                    
             $mail->Password   = '123';                              
