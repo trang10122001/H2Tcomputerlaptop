@@ -140,28 +140,28 @@
             $mail->SMTPDebug = 0;
             $mail->SMTPAuth   = true;                                  
             $mail->SMTPSecure = "ssl";          
-            $mail->Host       = 'smtp.gmail.com';                     
+            $mail->Host       = 'http://h2tcomputer.com/';                     
             $mail->Port       = 465;                                    
-            $mail->Username   = 'camcomputer@gmail.com';                    
+            $mail->Username   = 'H2Tcomputer@gmail.com';                    
             $mail->Password   = '123';                              
             
             //Recipients
-            $mail->setFrom('camcomputer@gmail.com', 'CAM COMPUTER');
+            $mail->setFrom('H2Tcomputer@gmail.com', 'H2T COMPUTER');
             $mail->addAddress($receiver['email'], $receiver['name']);     
-            $mail->addReplyTo('camcomputer@gmail.com', 'CAM COMPUTER');
+            $mail->addReplyTo('H2Tcomputer@gmail.com', 'H2T COMPUTER');
 
             //Content
             $mail->isHTML(true);                                  
-            $mail->Subject = 'Thông tin tài khoản - CAM Computer';
+            $mail->Subject = 'Thông tin tài khoản - H2T Computer';
             $mail->Body    = ' <html>
                                     <body>
                                         <p>Xin chào '.$receiver['name'].',</p>
-                                        <p>Cảm ơn bạn đã đăng ký tài khoản tại CAM Computer.</p>
+                                        <p>Cảm ơn bạn đã đăng ký tài khoản tại H2T Computer.</p>
                                         <p>Để đăng nhập, hãy sử dụng thông tin tài khoản dưới đây:</p>
                                         <p><b>Tài khoản</b>: <i>'.$receiver['email'].'</i></p>
                                         <p><b>Mật khẩu</b>: <i>'.$receiver['password'].'</i></p>
                                         <p>Trân trọng,</p>
-                                        <p><b>CAM COMPUTER</b></p>
+                                        <p><b>H2T COMPUTER</b></p>
                                     </body>
                                 </html>';
 
